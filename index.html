@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTN NNTT — Giúp Con 8-15 Tuổi Tự Tin Nói Tiếng Anh Theo Mẫu Có Sẵn</title>
+    <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+    <style>
+        /* Multi-Palette Variables */
+        :root {
+            --color-fresh-lime: #DDF3A3;
+            --color-azure-blue: #0055A6;
+            --color-chartreuse-pastel: #CEFF8A;
+            --color-deep-teal: #173433;
+            --color-teal-dark: #0F2625;
+            --color-[#CEFF8A]: #CEFF8A;
+        }
+        @keyframes pulse-subtle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+        }
+        .animate-pulse-subtle { animation: pulse-subtle 3s infinite ease-in-out; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#CEFF8A] selection:text-[#173433] font-sans">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="bg-[#0055A6] text-[#CEFF8A] font-black text-lg p-2 rounded-xl flex items-center justify-center shadow-md px-3 border border-[#003B73]">LTN</span>
+                <div>
+                    <span class="font-extrabold text-base sm:text-lg tracking-tight text-[#0055A6]">LTN <span class="text-[#173433]">NNTT</span></span>
+                    <span class="block text-xs font-semibold text-slate-600">Học tiếng Anh online với 100% giáo viên nước ngoài</span>
+                </div>
+            </div>
+            <a href="#pricing" class="bg-[#0055A6] hover:bg-[#173433] text-[#CEFF8A] font-extrabold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all text-sm flex items-center gap-2">
+                <span>Nhận Bộ Tài Liệu</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-b from-[#eef9d4] via-[#F4FCDA]/60 to-slate-50 pt-10 pb-16 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <!-- Top Tag -->
+            <div class="inline-flex items-center gap-2 bg-[#CEFF8A] border border-[#b8e86b] text-[#173433] px-4 py-1.5 rounded-full text-xs sm:text-sm font-black mb-6 shadow-sm">
+                <span class="flex h-2.5 w-2.5 rounded-full bg-[#0055A6] animate-ping"></span>
+                <span>NGOẠI NGỮ TRỰC TUYẾN LTN • Dành Cho Học Sinh 8 - 15 Tuổi</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-3xl sm:text-5xl font-black text-slate-900 leading-tight sm:leading-tight mb-6">
+                Giúp Con 8 - 15 Tuổi Tự Tin Nói Tiếng Anh Theo Mẫu Có Sẵn
+                <span class="block text-[#0055A6] mt-2">Mở Ra Là Con Biết Nói Ngay — Có Giáo Viên LTN Đồng Hành Hỗ Trợ!</span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-base sm:text-xl text-slate-700 max-w-3xl mx-auto mb-8 font-medium leading-relaxed">
+                Không còn ngập ngừng, sợ sai • Luyện <b>15 phút mỗi ngày</b> theo kịch bản mẫu câu chuẩn có sẵn • Đội ngũ giáo viên LTN đồng hành nhận xét & sửa lỗi phát âm 1:1.
+            </p>
+
+            <!-- Hero Video / Image Mockup -->
+            <div class="relative max-w-3xl mx-auto mb-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-[#173433] group">
+                <div class="aspect-video flex flex-col items-center justify-center bg-gradient-to-br from-[#0055A6] via-[#173433] to-[#0F2625] p-6 text-white text-center relative">
+                    <div class="w-20 h-20 rounded-full bg-[#CEFF8A] text-[#173433] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform cursor-pointer mb-4">
+                        <svg class="w-10 h-10 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <span class="font-black text-lg sm:text-xl text-[#CEFF8A]">Xem Video Học Sinh 8-15 Tuổi Luyện Nói Theo Mẫu</span>
+                    <span class="text-xs text-slate-200 mt-1">Phương pháp Pattern Speaking — Phản xạ tự nhiên không cần dịch trong đầu</span>
+                </div>
+            </div>
+
+            <!-- Quick CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+                <a href="#pricing" class="w-full sm:w-auto bg-[#0055A6] hover:bg-[#173433] text-[#CEFF8A] font-black text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 text-center animate-pulse-subtle">
+                    🚀 Đăng Ký Chỉ Từ 99K
+                </a>
+                <a href="#roadmap" class="w-full sm:w-auto bg-white hover:bg-slate-100 text-[#0055A6] font-bold text-base px-6 py-4 rounded-xl shadow border border-slate-200 text-center">
+                    📖 Xem 30 Chủ Đề Mẫu (8-15t)
+                </a>
+            </div>
+
+            <!-- Trust Badge -->
+            <div class="flex items-center justify-center gap-6 mt-8 text-xs font-semibold text-slate-600">
+                <span class="flex items-center gap-1"><b class="text-[#0055A6]">✓</b> Học sinh 8 - 15 tuổi</span>
+                <span class="flex items-center gap-1"><b class="text-[#0055A6]">✓</b> Mẫu câu có sẵn mở ra là dùng</span>
+                <span class="flex items-center gap-1"><b class="text-[#0055A6]">✓</b> Có giáo viên LTN đồng hành</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSIGHT & PAIN POINTS SECTION -->
+    <section class="py-16 bg-white border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+                    Con Đã Học Tiếng Anh Nhiều Năm Ở Trường... Nhưng Tại Sao Vẫn Ngại Nói?
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Ở độ tuổi 8 - 15, hầu hết các con đều đã tích lũy từ vựng khá nhiều, nhưng khi gặp giao tiếp thực tế lại ngập ngừng vì những rào cản này:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- Card 1 -->
+                <div class="bg-[#F4FCDA] border border-[#c7e87d] rounded-2xl p-6 flex gap-4 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-[#173433] text-[#CEFF8A] flex-shrink-0 flex items-center justify-center font-black text-xl shadow">1</div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1">Ngại Mở Miệng, Sợ Nói Sai Phát Âm</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Con sợ phát âm không chuẩn bị bạn bè hay người xung quanh cười, nên thà im lặng chứ không dám tự tin giao tiếp.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#F4FCDA] border border-[#c7e87d] rounded-2xl p-6 flex gap-4 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-[#173433] text-[#CEFF8A] flex-shrink-0 flex items-center justify-center font-black text-xl shadow">2</div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1">Mất Thời Gian Dịch Từ Tiếng Việt Trong Đầu</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Thiếu bộ mẫu câu chuẩn có sẵn khiến con phải tự ghép từ, dẫn đến ngập ngừng 10-15 giây mới nói được một câu ngắn.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#F4FCDA] border border-[#c7e87d] rounded-2xl p-6 flex gap-4 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-[#173433] text-[#CEFF8A] flex-shrink-0 flex items-center justify-center font-black text-xl shadow">3</div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1">Chủ Yếu Học Lý Thuyết Trên Giấy</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Điểm số ngữ pháp ở trường cao nhưng thiếu kịch bản luyện nói theo tình huống thực tế đời sống và trường học.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-[#F4FCDA] border border-[#c7e87d] rounded-2xl p-6 flex gap-4 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-[#173433] text-[#CEFF8A] flex-shrink-0 flex items-center justify-center font-black text-xl shadow">4</div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1">Thiếu Người Đồng Hành Sửa Lỗi Cho Con</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Ba mẹ bận rộn hoặc không chuyên tiếng Anh khó sửa lỗi phát âm cho con. Con cần có giáo viên đồng hành nhắc nhở hàng ngày.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insight Highlight Quote Box -->
+            <div class="mt-10 max-w-3xl mx-auto bg-gradient-to-r from-[#173433] via-[#0055A6] to-[#173433] text-white p-6 sm:p-8 rounded-2xl shadow-xl text-center relative overflow-hidden">
+                <div class="text-5xl text-[#CEFF8A] opacity-40 absolute top-2 left-4 font-serif">“</div>
+                <p class="text-lg sm:text-xl font-medium italic relative z-10 leading-relaxed text-[#CEFF8A]">
+                    “Con tôi 8-15 tuổi đã có từ vựng cơ bản, nhưng cháu rất ngập ngừng khi nói. Cháu cần bộ mẫu câu có sẵn để mở ra là nói được ngay, và cần có giáo viên đồng hành hỗ trợ sửa lỗi để con tự tin hơn.”
+                </p>
+                <span class="block text-xs uppercase tracking-widest text-slate-200 font-bold mt-3">— Mong muốn của hàng ngàn Phụ Huynh Việt Nam</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTION & FEATURES SECTION -->
+    <section class="py-16 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-[#0055A6] font-extrabold uppercase tracking-wider text-xs">NGOẠI NGỮ TRỰC TUYẾN LTN</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1 mb-4">
+                    Bộ Tài Liệu Mẫu Câu Có Sẵn + Giáo Viên LTN Đồng Hành
+                </h2>
+                <p class="text-slate-600 text-base">
+                    Được thiết kế chuyên biệt cho lứa tuổi 8 - 15 tuổi, giúp con bật phản xạ nói tiếng Anh tự nhiên trong 30 ngày mà không cần áp lực học vẹt.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-[#c7e87d] shadow-sm text-center">
+                    <div class="w-14 h-14 bg-[#CEFF8A] text-[#173433] rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-black shadow-sm">📜</div>
+                    <h3 class="font-bold text-slate-900 mb-2">Mẫu Câu Có Sẵn</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Chuẩn hóa kịch bản nói theo từng chủ đề. Con chỉ cần mở ra là biết phản xạ ngay.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-[#c7e87d] shadow-sm text-center">
+                    <div class="w-14 h-14 bg-[#CEFF8A] text-[#173433] rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-black shadow-sm">⏱️</div>
+                    <h3 class="font-bold text-slate-900 mb-2">15 Phút Mỗi Ngày</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Thời lượng tinh gọn vừa sức cho học sinh 8-15t. Dễ dàng duy trì thói quen mỗi ngày.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-[#c7e87d] shadow-sm text-center">
+                    <div class="w-14 h-14 bg-[#CEFF8A] text-[#173433] rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-black shadow-sm">🎬</div>
+                    <h3 class="font-bold text-slate-900 mb-2">Video Phát Âm Chuẩn</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Video nghe mẫu giúp con nhại theo (Shadowing) chính xác ngữ điệu chuẩn bản xứ.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-[#0055A6] shadow-sm text-center">
+                    <div class="w-14 h-14 bg-[#0055A6] text-[#CEFF8A] rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-black shadow-sm">👨‍🏫</div>
+                    <h3 class="font-bold text-slate-900 mb-2">Giáo Viên Đồng Hành</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Đội ngũ LTN theo sát, chấm sửa bài nói 1:1 & giải đáp Q&A thúc đẩy con hoàn thành thử thách.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP / CURRICULUM PREVIEW FOR 8-15 YEARS OLD -->
+    <section id="roadmap" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
+                    Lộ Trình 30 Ngày Speaking Theo Mẫu (Cho Trẻ 8 - 15 Tuổi)
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">Mỗi ngày 1 kịch bản mẫu câu ngắn gọn xung quanh trường học, đời sống & thuyết trình</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Week 1 -->
+                <div class="border border-[#c7e87d] rounded-2xl p-5 bg-[#F4FCDA]">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="bg-[#0055A6] text-[#CEFF8A] font-bold text-xs px-3 py-1 rounded-full">TUẦN 1</span>
+                        <h3 class="font-bold text-slate-900">Giao Tiếp Trường Học & Bạn Bè</h3>
+                    </div>
+                    <ul class="text-xs text-slate-700 space-y-2.5">
+                        <li class="flex items-start gap-2"><span>🏫</span> Day 01: Giới thiệu bản thân & sở thích (Self-intro)</li>
+                        <li class="flex items-start gap-2"><span>🎒</span> Day 02: Nói về môn học yêu thích ở trường</li>
+                        <li class="flex items-start gap-2"><span>⚽</span> Day 03: Mẫu câu rủ bạn chơi thể thao / giải trí</li>
+                        <li class="flex items-start gap-2"><span>🍕</span> Day 04: Nói về món ăn & đồ uống khoái khẩu</li>
+                        <li class="flex items-start gap-2"><span>🐶</span> Day 05: Giới thiệu thú cưng / động vật yêu thích</li>
+                        <li class="flex items-start gap-2"><span>🎮</span> Day 06: Kể về hoạt động cuối tuần</li>
+                        <li class="flex items-start gap-2"><span>🌟</span> Day 07: Thử thách nói tự tin 1 phút trước ống kính</li>
+                    </ul>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="border border-[#c7e87d] rounded-2xl p-5 bg-[#F4FCDA]">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="bg-[#0055A6] text-[#CEFF8A] font-bold text-xs px-3 py-1 rounded-full">TUẦN 2</span>
+                        <h3 class="font-bold text-slate-900">Tình Huống Đời Sống Thực Tế</h3>
+                    </div>
+                    <ul class="text-xs text-slate-700 space-y-2.5">
+                        <li class="flex items-start gap-2"><span>🛒</span> Day 08: Mẫu câu mua sắm & hỏi giá tiền</li>
+                        <li class="flex items-start gap-2"><span>🍕</span> Day 09: Gọi đồ ăn tại nhà hàng / quán ăn</li>
+                        <li class="flex items-start gap-2"><span>🗺️</span> Day 10: Hỏi đường & chỉ phương hướng đơn giản</li>
+                        <li class="flex items-start gap-2"><span>🎬</span> Day 11: Kể về bộ phim / cuốn sách con thích</li>
+                        <li class="flex items-start gap-2"><span>👨‍👩‍👧</span> Day 12: Giới thiệu gia đình & người thân</li>
+                        <li class="flex items-start gap-2"><span>✈️</span> Day 13: Nói về chuyến du lịch mong ước</li>
+                        <li class="flex items-start gap-2"><span>🏆</span> Day 14: Review video & nhận xét từ Giáo viên LTN</li>
+                    </ul>
+                </div>
+
+                <!-- Week 3 & 4 -->
+                <div class="border border-[#173433] rounded-2xl p-5 bg-[#173433] text-white shadow-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="bg-[#CEFF8A] text-[#173433] font-black text-xs px-3 py-1 rounded-full">TUẦN 3 & 4</span>
+                        <h3 class="font-bold text-[#CEFF8A]">Thuyết Trình & Phản Xạ Nâng Cao</h3>
+                    </div>
+                    <ul class="text-xs text-slate-100 space-y-2.5">
+                        <li class="flex items-start gap-2"><span>🚀</span> Day 15: Thuyết trình ngắn về ước mơ tương lai</li>
+                        <li class="flex items-start gap-2"><span>🌍</span> Day 16: Bảo vệ môi trường & hành động nhỏ</li>
+                        <li class="flex items-start gap-2"><span>💡</span> Day 17: Nêu ý kiến cá nhân (Agree & Disagree)</li>
+                        <li class="flex items-start gap-2"><span>🎤</span> Day 18-30: Bài luyện phản xạ + Báo cáo kết quả 30 ngày</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFER & PRICING TIERS SECTION (DEEP TEAL & AZURE BLUE ACCENTS) -->
+    <section id="pricing" class="py-16 bg-[#173433] text-white relative">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="bg-[#CEFF8A] text-[#173433] text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider">
+                    Ưu Đãi Tuyển Sinh Cho Học Sinh 8-15 Tuổi
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black mt-3 mb-4 text-white">
+                    Chọn Gói Đồng Hành Phù Hợp Cho Con
+                </h2>
+                <p class="text-slate-200 text-base">
+                    Đầu tư nhỏ cho con tự tin mở miệng nói tiếng Anh trôi chảy — Nhận tài liệu & hỗ trợ trọn đời.
+                </p>
+            </div>
+
+            <!-- Pricing Cards Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+
+                <!-- LEVEL 1 CARD -->
+                <div class="bg-[#0F2625]/80 border border-slate-700 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#CEFF8A] transition-all">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="bg-slate-700 text-slate-300 text-xs font-bold px-3 py-1 rounded-full uppercase">Level 1</span>
+                            <span class="text-xs text-slate-300">Tự Luyện</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Bộ Mẫu Câu Tự Học (8-15t)</h3>
+                        <p class="text-xs text-slate-300 mb-6">Dành cho con tự giác học, ngân sách tiết kiệm.</p>
+                        
+                        <div class="mb-6">
+                            <span class="text-4xl font-black text-white">99.000đ</span>
+                            <span class="text-xs text-slate-400 line-through block mt-1">Giá gốc: 299.000đ</span>
+                        </div>
+
+                        <ul class="text-xs text-slate-200 space-y-3 mb-8 border-t border-slate-700/60 pt-6">
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold">✓</span>
+                                <span><b>30 bài Speaking mẫu có sẵn</b> cho bé 8-15t</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold">✓</span>
+                                <span>Mẫu câu kịch bản phản xạ tình huống</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold">✓</span>
+                                <span>Bài tập tự luyện phản xạ mỗi ngày</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold">✓</span>
+                                <span>Bonus 01: Speaking Challenge Tracker</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openModal('L1 - BỘ MẪU CÂU TỰ HỌC (99K)')" class="w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-3.5 rounded-xl transition-colors text-sm">
+                        Đăng Ký Gói 99K
+                    </button>
+                </div>
+
+                <!-- LEVEL 2 CARD -->
+                <div class="bg-[#0F2625]/80 border border-slate-700 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#CEFF8A] transition-all">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="bg-slate-700 text-slate-300 text-xs font-bold px-3 py-1 rounded-full uppercase">Level 2</span>
+                            <span class="text-xs text-slate-300">Có Video Mẫu</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Tài Liệu + Video Hướng Dẫn</h3>
+                        <p class="text-xs text-slate-300 mb-6">Dành cho con cần nghe phát âm mẫu chuẩn để đọc theo.</p>
+                        
+                        <div class="mb-6">
+                            <span class="text-4xl font-black text-white">299.000đ</span>
+                            <span class="text-xs text-slate-400 line-through block mt-1">Giá gốc: 699.000đ</span>
+                        </div>
+
+                        <ul class="text-xs text-slate-200 space-y-3 mb-8 border-t border-slate-700/60 pt-6">
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold">✓</span>
+                                <span>Toàn bộ tài liệu Level 1 (30 bài mẫu)</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold">✓</span>
+                                <span><b>Video hướng dẫn phát âm & ngữ điệu từng bài</b></span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold">✓</span>
+                                <span>Audio mp3 nghe luyện giọng chuẩn</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold">✓</span>
+                                <span>Bộ "100 câu cứu nguy khi Speaking"</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openModal('L2 - TÀI LIỆU + VIDEO (299K)')" class="w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-3.5 rounded-xl transition-colors text-sm">
+                        Đăng Ký Gói 299K
+                    </button>
+                </div>
+
+                <!-- LEVEL 3 CARD (BEST SELLER - FULL SUPPORT WITH CHARTREUSE & AZURE) -->
+                <div class="bg-gradient-to-b from-[#0055A6] via-[#0F2625] to-[#173433] border-4 border-[#CEFF8A] rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative transform lg:-translate-y-2">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#CEFF8A] text-[#173433] font-black text-xs px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
+                        ⭐ Khuyên Dùng - Có Giáo Viên Sửa Lỗi 1:1
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-4 mt-2">
+                            <span class="bg-[#CEFF8A]/20 text-[#CEFF8A] text-xs font-extrabold px-3 py-1 rounded-full uppercase border border-[#CEFF8A]/30">Level 3</span>
+                            <span class="text-xs text-[#CEFF8A] font-bold">Giáo Viên LTN Đồng Hành</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Challenge + Giáo Viên Đồng Hành 1:1</h3>
+                        <p class="text-xs text-slate-200 mb-6">Dành cho con cần được theo sát, nhận xét bài nói & sửa lỗi trực tiếp.</p>
+                        
+                        <div class="mb-6">
+                            <span class="text-5xl font-black text-[#CEFF8A]">499.000đ</span>
+                            <span class="text-xs text-slate-300 line-through block mt-1">Giá gốc: 1.190.000đ</span>
+                        </div>
+
+                        <ul class="text-xs text-slate-100 space-y-3 mb-8 border-t border-white/20 pt-6">
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold text-base">✓</span>
+                                <span><b>Toàn bộ Level 2</b> (Tài liệu + Video + Audio)</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold text-base">✓</span>
+                                <span><b>Thử thách đồng hành 30 ngày rèn kỷ luật cho con</b></span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold text-base">✓</span>
+                                <span><b>Giáo viên LTN trực tiếp chấm sửa phát âm 1:1 cho con</b></span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold text-base">✓</span>
+                                <span>Q&A giải đáp thắc mắc bài học hàng ngày</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="text-[#CEFF8A] font-bold text-base">✓</span>
+                                <span>Full trọn bộ 5 Quà Tặng Độc Quyền</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openModal('L3 - GIÁO VIÊN LTN ĐỒNG HÀNH (499K)')" class="w-full bg-[#CEFF8A] hover:bg-[#b8e86b] text-[#173433] font-black py-4 rounded-xl shadow-lg hover:shadow-xl transition-all text-base animate-pulse-subtle">
+                        🔥 Đăng Ký Gói 499K (Con Được Đồng Hành 1:1)
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BONUSES SECTION -->
+    <section class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-[#0055A6] font-bold text-xs uppercase tracking-wider">Đặc Quyền Đăng Ký Hôm Nay</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1 mb-3">
+                    Bộ 5 Quà Tặng Độc Quyền Cho Bé 8-15 Tuổi
+                </h2>
+                <p class="text-slate-600 text-sm">Trị giá hơn 1.500.000đ — Hỗ trợ con luyện nói toàn diện</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-[#F4FCDA] border border-[#c7e87d] rounded-2xl p-5 flex items-start gap-4">
+                    <span class="text-3xl">📊</span>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Bonus 01: Challenge Tracker 30 Ngày</h4>
+                        <p class="text-xs text-slate-600">Bảng theo dõi tiến độ luyện tập giúp con 8-15t tự giác rèn luyện.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#F4FCDA] border border-[#c7e87d] rounded-2xl p-5 flex items-start gap-4">
+                    <span class="text-3xl">🛟</span>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Bonus 02: 100 Câu Cứu Nguy</h4>
+                        <p class="text-xs text-slate-600">Các mẫu câu phản xạ nhanh chữa cháy khi con bị khựng từ.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#F4FCDA] border border-[#c7e87d] rounded-2xl p-5 flex items-start gap-4">
+                    <span class="text-3xl">🎧</span>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Bonus 03: Shadowing Guide & Audio</h4>
+                        <p class="text-xs text-slate-600">Bí kíp nhại giọng phát âm chuẩn bản xứ theo video.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#F4FCDA] border border-[#c7e87d] rounded-2xl p-5 flex items-start gap-4">
+                    <span class="text-3xl">🚀</span>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Bonus 04: Topic Thuyết Trình Nâng Cao</h4>
+                        <p class="text-xs text-slate-600">Bộ chủ đề mở rộng cho học sinh Tiểu học & THCS.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#F4FCDA] border border-[#c7e87d] rounded-2xl p-5 flex items-start gap-4">
+                    <span class="text-3xl">👨‍🏫</span>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Bonus 05: Q&A Với Giáo Viên LTN</h4>
+                        <p class="text-xs text-slate-600">Giải đáp thắc mắc & hỗ trợ bài nói cho con trong suốt thử thách.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#173433] text-white border border-[#0F2625] rounded-2xl p-5 flex items-start gap-4">
+                    <span class="text-3xl">🎁</span>
+                    <div>
+                        <h4 class="font-bold text-[#CEFF8A] text-sm mb-1">Cập Nhật Bài Học Trọn Đời</h4>
+                        <p class="text-xs text-slate-100">Tự động nhận các bộ mẫu câu chủ đề bổ sung miễn phí từ LTN.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="py-16 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 text-center mb-10">
+                Câu Hỏi Thường Gặp (FAQ)
+            </h2>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq1')" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center text-sm sm:text-base">
+                        <span>Bộ tài liệu này phù hợp cho độ tuổi nào?</span>
+                        <span id="faq1-icon" class="text-[#0055A6] font-extrabold text-xl">+</span>
+                    </button>
+                    <div id="faq1" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Bộ tài liệu & thử thách được thiết kế tối ưu cho học sinh từ <b>8 đến 15 tuổi</b> (Tiểu học & THCS) đã học từ vựng cơ bản ở trường nhưng ngại mở miệng giao tiếp.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq2')" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center text-sm sm:text-base">
+                        <span>Ba mẹ không giỏi tiếng Anh thì con có tự học được không?</span>
+                        <span id="faq2-icon" class="text-[#0055A6] font-extrabold text-xl">+</span>
+                    </button>
+                    <div id="faq2" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Hoàn toàn được! Tất cả kịch bản đều là mẫu câu chuẩn có sẵn, kèm video nghe mẫu phát âm. Đặc biệt với gói L3, đội ngũ giáo viên LTN sẽ trực tiếp đồng hành sửa lỗi phát âm 1:1 cho con.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq3')" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center text-sm sm:text-base">
+                        <span>Nên chọn gói 99K, 299K hay 499K cho con?</span>
+                        <span id="faq3-icon" class="text-[#0055A6] font-extrabold text-xl">+</span>
+                    </button>
+                    <div id="faq3" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        • <b>Gói 99K:</b> Bộ mẫu câu tự học cho bé tự giác.<br>
+                        • <b>Gói 299K:</b> Bộ mẫu câu + Video phát âm chuẩn để con nhại theo.<br>
+                        • <b>Gói 499K (Khuyên dùng):</b> Có thêm đội ngũ giáo viên LTN đồng hành rèn kỷ luật & chấm sửa bài nói 1:1 cho con.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0F2625] text-slate-300 py-12 border-t border-slate-800 text-xs">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h3 class="font-extrabold text-lg text-[#CEFF8A] mb-1">NGOẠI NGỮ TRỰC TUYẾN LTN</h3>
+            <p class="font-bold text-white mb-2">LTN NNTT — Thử Thách 30 Ngày Giúp Con 8-15 Tuổi Tự Tin Nói Tiếng Anh</p>
+            <p class="text-slate-300 mb-4">Học tiếng Anh online với 100% giáo viên nước ngoài</p>
+            
+            <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-slate-200 my-4 text-xs font-semibold">
+                <span>📞 Hotline: <a href="tel:0334782611" class="text-[#CEFF8A] hover:underline font-bold">033 478 2611</a></span>
+                <span>✉️ Email: <a href="mailto:ngoaingu.ltn@gmail.com" class="text-[#CEFF8A] hover:underline font-bold">ngoaingu.ltn@gmail.com</a></span>
+                <span>🌐 Website: <a href="http://ltn.edu.vn/" target="_blank" class="text-[#CEFF8A] hover:underline font-bold">ltn.edu.vn</a></span>
+            </div>
+
+            <div class="flex items-center justify-center gap-4 text-slate-300 mb-6">
+                <a href="http://bit.ly/ngoaingultn" target="_blank" class="hover:text-[#CEFF8A] transition-colors bg-[#173433] px-3 py-1.5 rounded-lg border border-slate-700 flex items-center gap-1.5">
+                    <span>📘 Fanpage:</span> <span class="text-white font-medium">bit.ly/ngoaingultn</span>
+                </a>
+                <a href="http://bit.ly/ltnyoutube" target="_blank" class="hover:text-[#CEFF8A] transition-colors bg-[#173433] px-3 py-1.5 rounded-lg border border-slate-700 flex items-center gap-1.5">
+                    <span>▶️ Youtube:</span> <span class="text-white font-medium">bit.ly/ltnyoutube</span>
+                </a>
+            </div>
+
+            <p class="text-slate-400 text-xs">Bản quyền © 2026 NGOẠI NGỮ TRỰC TUYẾN LTN. Mọi quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <!-- ORDER MODAL -->
+    <div id="orderModal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-2xl font-bold">&times;</button>
+            
+            <div class="text-center mb-6">
+                <span class="bg-[#CEFF8A] text-[#173433] font-bold text-xs px-3 py-1 rounded-full uppercase">LTN NNTT - Đăng Ký Cho Con</span>
+                <h3 id="modalPackageTitle" class="text-xl font-extrabold text-slate-900 mt-2">Gói L3 - GIÁO VIÊN LTN ĐỒNG HÀNH (499K)</h3>
+                <p class="text-xs text-slate-500 mt-1">Vui lòng điền thông tin để kích hoạt tài liệu & nhóm đồng hành cho con qua Zalo: 033 478 2611</p>
+            </div>
+
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Họ và Tên Ba/Mẹ *</label>
+                    <input type="text" required placeholder="Ví dụ: Nguyễn Văn A" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-[#0055A6] focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Họ tên & Độ tuổi của Con *</label>
+                    <input type="text" required placeholder="Ví dụ: Bé Minh (10 tuổi)" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-[#0055A6] focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Số Điện Thoại / Zalo *</label>
+                    <input type="tel" required placeholder="Ví dụ: 0912345678" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-[#0055A6] focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Địa chỉ Email nhận tài liệu *</label>
+                    <input type="email" required placeholder="name@gmail.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-[#0055A6] focus:outline-none">
+                </div>
+
+                <div class="bg-[#F4FCDA] p-3 rounded-xl text-xs text-[#173433] font-semibold border border-[#c7e87d]">
+                    🔒 Thông tin được bảo mật bởi NGOẠI NGỮ TRỰC TUYẾN LTN.
+                </div>
+
+                <button type="submit" class="w-full bg-[#0055A6] hover:bg-[#173433] text-[#CEFF8A] font-black py-4 rounded-xl shadow-lg transition-all text-base">
+                    ✅ XÁC NHẬN ĐĂNG KÝ CHO CON
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FOR INTERACTIVITY -->
+    <script>
+        function toggleFaq(id) {
+            const el = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            if (el.classList.contains('hidden')) {
+                el.classList.remove('hidden');
+                icon.textContent = '−';
+            } else {
+                el.classList.add('hidden');
+                icon.textContent = '+';
+            }
+        }
+
+        function openModal(packageName) {
+            document.getElementById('modalPackageTitle').textContent = 'Đăng Ký: ' + packageName;
+            document.getElementById('orderModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert('🎉 Cảm ơn Ba/Mẹ đã đăng ký cho con với Ngoại Ngữ Trực Tuyến LTN! Giáo viên LTN sẽ liên hệ qua Zalo/SĐT 033 478 2611 để kích hoạt bộ tài liệu & nhóm đồng hành.');
+            closeModal();
+        }
+    </script>
+</body>
+</html>
