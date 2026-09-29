@@ -640,9 +640,8 @@
 
                 <!-- BANK DETAILS TABLE -->
                 <div class="text-left text-xs space-y-1.5 bg-white p-3 rounded-xl border border-slate-200">
-                    <div class="flex justify-between"><span class="text-slate-500">Ngân hàng:</span><strong class="text-slate-900 font-bold" id="bankName">MB Bank (Ngân hàng Quân Đội)</strong></div>
-                    <div class="flex justify-between"><span class="text-slate-500">Số tài khoản:</span><strong class="text-slate-900 font-bold" id="bankAcc">0334782611</strong></div>
-                    <div class="flex justify-between"><span class="text-slate-500">Chủ tài khoản:</span><strong class="text-slate-900 font-bold" id="bankOwner">HUYNH THI THU</strong></div>
+                    <div class="flex justify-between"><span class="text-slate-500">Số tài khoản:</span><strong class="text-slate-900 font-bold" id="bankAcc">05463210201</strong></div>
+                    <div class="flex justify-between"><span class="text-slate-500">Chủ tài khoản:</span><strong class="text-slate-900 font-bold" id="bankOwner">LA THI BICH LAM</strong></div>
                     <div class="flex justify-between items-center pt-1 border-t border-slate-100">
                         <span class="text-slate-500">Số tiền:</span>
                         <strong id="modalAmountDisplay" class="text-[#0055A6] font-black text-sm">299.000đ</strong>
@@ -714,7 +713,7 @@
             document.getElementById('modalAmountDisplay').innerText = `${amount.toLocaleString('vi-VN')}đ`;
             document.getElementById('transferContentCode').innerText = transferCode;
 
-            const qrUrl = `https://img.vietqr.io/image/MB-0334782611-compact2.png?amount=${amount}&addInfo=${encodeURIComponent(transferCode)}&accountName=HUYNH%20THI%20THU`;
+            const qrUrl = `https://img.vietqr.io/image/05463210201-compact2.png?amount=${amount}&addInfo=${encodeURIComponent(transferCode)}&accountName=LA%20THI%20BICH%20LAM`;
             document.getElementById('vietqrImage').src = qrUrl;
 
             document.getElementById('orderModal').classList.remove('hidden');
