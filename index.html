@@ -713,8 +713,13 @@
             document.getElementById('modalAmountDisplay').innerText = `${amount.toLocaleString('vi-VN')}đ`;
             document.getElementById('transferContentCode').innerText = transferCode;
 
-            const qrUrl = `https://img.vietqr.io/image/05463210201-compact2.png?amount=${amount}&addInfo=${encodeURIComponent(transferCode)}&accountName=LA%20THI%20BICH%20LAM`;
-            document.getElementById('vietqrImage').src = qrUrl;
+            let qrImgPath = 'qr-goi2.png';
+            if (goiCode === 'G1') {
+                qrImgPath = 'qr-goi1.png';
+            } else if (goiCode === 'G3') {
+                qrImgPath = 'qr-goi3.png';
+            }
+            document.getElementById('vietqrImage').src = qrImgPath;
 
             document.getElementById('orderModal').classList.remove('hidden');
         }
