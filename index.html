@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning - Tutoring - Nurturing — Giúp Con 8-15 Tuổi Tự Tin Nói Tiếng Anh Theo Mẫu Có Sẵn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
     <style>
-        /* Multi-Palette Variables */
+        /* Multi-Palette Variables & Mobile Font Rendering Fixes */
         :root {
             --color-fresh-lime: #DDF3A3;
             --color-azure-blue: #0055A6;
@@ -15,6 +18,16 @@
             --color-teal-dark: #0F2625;
             --color-[#CEFF8A]: #CEFF8A;
         }
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            -webkit-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            overflow-x: hidden;
+        }
         @keyframes pulse-subtle {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.03); }
@@ -22,47 +35,47 @@
         .animate-pulse-subtle { animation: pulse-subtle 3s infinite ease-in-out; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#CEFF8A] selection:text-[#173433] font-sans">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#CEFF8A] selection:text-[#173433]">
 
     <!-- HEADER / NAVIGATION -->
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="logo.png" alt="LANGUAGE ONLINE LTN" class="h-12 w-auto object-contain">
+            <div class="flex items-center gap-2.5 sm:gap-3">
+                <img src="logo.png" alt="LANGUAGE ONLINE LTN" class="h-10 sm:h-12 w-auto object-contain">
                 <div>
-                    <span class="font-extrabold text-base sm:text-lg tracking-tight text-[#0055A6]">Learning - Tutoring - Nurturing</span>
-                    <span class="block text-[11px] font-bold text-slate-500 uppercase tracking-wide">LANGUAGE ONLINE LTN</span>
+                    <span class="font-extrabold text-xs sm:text-base md:text-lg tracking-tight text-[#0055A6] block leading-tight">Learning - Tutoring - Nurturing</span>
+                    <span class="block text-[10px] sm:text-[11px] font-bold text-slate-500 uppercase tracking-wide">LANGUAGE ONLINE LTN</span>
                 </div>
             </div>
-            <div class="flex items-center gap-2.5">
-                <a href="https://zalo.me/g/pajxunxu4bsamvzmowso" target="_blank" class="flex items-center gap-1.5 text-xs font-extrabold text-[#0055A6] bg-[#F4FCDA] border border-[#c7e87d] px-3.5 py-2 rounded-full hover:bg-[#CEFF8A] transition-colors">
+            <div class="flex items-center gap-2">
+                <a href="https://zalo.me/g/pajxunxu4bsamvzmowso" target="_blank" class="flex items-center gap-1 text-[11px] sm:text-xs font-extrabold text-[#0055A6] bg-[#F4FCDA] border border-[#c7e87d] px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-full hover:bg-[#CEFF8A] transition-colors whitespace-nowrap">
                     <span>💬 Nhóm Zalo Free</span>
                 </a>
-                <a href="#pricing" class="bg-[#0055A6] hover:bg-[#173433] text-[#CEFF8A] font-extrabold px-4 sm:px-5 py-2 rounded-full shadow-md hover:shadow-lg transition-all text-xs sm:text-sm flex items-center gap-1.5">
-                    <span>Nhận Bộ Tài Liệu</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                <a href="#pricing" class="bg-[#0055A6] hover:bg-[#173433] text-[#CEFF8A] font-extrabold px-3 sm:px-5 py-1.5 sm:py-2 rounded-full shadow-md hover:shadow-lg transition-all text-xs sm:text-sm flex items-center gap-1 whitespace-nowrap">
+                    <span>Nhận Tài Liệu</span>
+                    <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </a>
             </div>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative bg-gradient-to-b from-[#eef9d4] via-[#F4FCDA]/60 to-slate-50 pt-10 pb-16 overflow-hidden">
+    <section class="relative bg-gradient-to-b from-[#eef9d4] via-[#F4FCDA]/60 to-slate-50 pt-8 sm:pt-10 pb-12 sm:pb-16 overflow-hidden">
         <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
             <!-- Top Tag -->
-            <div class="inline-flex items-center gap-2 bg-[#CEFF8A] border border-[#b8e86b] text-[#173433] px-4 py-1.5 rounded-full text-xs sm:text-sm font-black mb-6 shadow-sm">
-                <span class="flex h-2.5 w-2.5 rounded-full bg-[#0055A6] animate-ping"></span>
+            <div class="inline-flex items-center gap-2 bg-[#CEFF8A] border border-[#b8e86b] text-[#173433] px-3 sm:px-4 py-1.5 rounded-full text-[11px] sm:text-sm font-black mb-4 sm:mb-6 shadow-sm max-w-full">
+                <span class="flex h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#0055A6] animate-ping flex-shrink-0"></span>
                 <span>LANGUAGE ONLINE LTN • Dành Cho Học Sinh 8 - 15 Tuổi</span>
             </div>
 
             <!-- Main Headline -->
-            <h1 class="text-3xl sm:text-5xl font-black text-slate-900 leading-tight sm:leading-tight mb-6">
+            <h1 class="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 leading-tight sm:leading-tight mb-4 sm:mb-6">
                 Giúp Con 8 - 15 Tuổi Tự Tin Nói<br>
                 Tiếng Anh<br>
                 <span class="text-[#0055A6]">Theo Mẫu Có Sẵn</span>
             </h1>
 
-            <div class="inline-block bg-[#0055A6] text-[#CEFF8A] px-6 sm:px-8 py-3.5 rounded-full font-black text-sm sm:text-lg shadow-lg mb-8 leading-relaxed">
+            <div class="inline-block bg-[#0055A6] text-[#CEFF8A] px-4 sm:px-8 py-3 sm:py-3.5 rounded-2xl sm:rounded-full font-black text-xs sm:text-lg shadow-lg mb-6 sm:mb-8 leading-snug sm:leading-relaxed max-w-full">
                 Mở Ra Là Con Biết Nói Ngay — Có Giáo Viên LTN Đồng Hành Hỗ Trợ!
             </div>
 
@@ -140,26 +153,26 @@
     <section class="py-16 bg-white border-y border-slate-200">
         <div class="max-w-5xl mx-auto px-4">
             <!-- HEADLINE & SUBHEADLINE MATCHING IMAGE 3 LAYOUT -->
-            <div class="text-center max-w-4xl mx-auto mb-12">
-                <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mb-3 leading-snug">
+            <div class="text-center max-w-4xl mx-auto mb-10 sm:mb-12">
+                <h2 class="text-xl sm:text-3xl font-black text-slate-900 mb-3 leading-snug">
                     Nếu Con Đã Học Tiếng Anh Nhiều Năm,
                 </h2>
                 
-                <div class="inline-block bg-[#CEFF8A] border border-[#b8e86b] text-[#173433] px-6 py-2.5 rounded-full text-lg sm:text-2xl font-black mb-6 shadow-sm">
+                <div class="inline-block bg-[#CEFF8A] border border-[#b8e86b] text-[#173433] px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-sm sm:text-2xl font-black mb-4 sm:mb-6 shadow-sm max-w-full">
                     Đừng Để Con Chỉ Dừng Ở “Biết Tiếng Anh”.
                 </div>
 
                 <!-- Blue Banner with 2 Distinct Lines -->
-                <div class="bg-[#0055A6] text-[#CEFF8A] px-6 sm:px-10 py-5 rounded-2xl sm:rounded-3xl shadow-xl max-w-3xl mx-auto my-6 text-center">
-                    <div class="font-black text-base sm:text-xl tracking-wider uppercase mb-1">
+                <div class="bg-[#0055A6] text-[#CEFF8A] px-4 sm:px-10 py-4 sm:py-5 rounded-2xl sm:rounded-3xl shadow-xl max-w-3xl mx-auto my-4 sm:my-6 text-center">
+                    <div class="font-black text-xs sm:text-xl tracking-wider uppercase mb-1">
                         HÃY GIÚP CON TIẾN TỚI:
                     </div>
-                    <div class="font-black text-base sm:text-2xl text-[#CEFF8A]">
+                    <div class="font-black text-xs sm:text-2xl text-[#CEFF8A] leading-snug">
                         SỬ DỤNG TIẾNG ANH – TƯ DUY BẰNG TIẾNG ANH – TỰ TIN TRÌNH BÀY
                     </div>
                 </div>
 
-                <p class="text-slate-900 text-lg sm:text-2xl font-black mt-8">
+                <p class="text-slate-900 text-sm sm:text-2xl font-black mt-6 sm:mt-8">
                     Con đã học tiếng Anh nhiều năm nhưng tại sao vẫn chưa tự tin giao tiếp?
                 </p>
             </div>
