@@ -699,15 +699,160 @@
         <span class="text-sm font-extrabold tracking-tight">Vào Nhóm Zalo Free</span>
     </a>
 
-    <!-- MOBILE DEDICATED STICKY BOTTOM BAR (SMARTPHONES ONLY) -->
-    <div class="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-[#0F2625]/95 backdrop-blur-md px-3 py-2 border-t border-slate-800 flex items-center justify-between gap-2 shadow-2xl">
-        <a href="https://zalo.me/g/pajxunxu4bsamvzmowso" target="_blank" class="flex-1 bg-[#0068FF] hover:bg-[#0052cc] text-white font-extrabold text-xs py-3 px-2 rounded-xl flex items-center justify-center gap-1.5 shadow-md">
-            <span class="w-5 h-5 rounded-full bg-white text-[#0068FF] font-black flex items-center justify-center text-[10px]">Z</span>
-            <span>💬 Nhóm Zalo Free</span>
-        </a>
-        <a href="#pricing" class="flex-1 bg-[#0055A6] hover:bg-[#173433] text-[#CEFF8A] font-black text-xs py-3 px-2 rounded-xl flex items-center justify-center gap-1 shadow-md animate-pulse-subtle">
-            <span>🚀 Đăng Ký Từ 99K</span>
-        </a>
-    </div>
+    <!-- SCRIPT TỰ ĐỘNG CHẨN ĐOÁN & CÁ NHÂN HÓA LEVEL THUỘC LUỒNG QUIZ FUNNEL -->
+    <script>
+    (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const level = parseInt(urlParams.get('level')) || 0;
+        const name = urlParams.get('name') || '';
+
+        if (!level || level < 1 || level > 4) return;
+
+        const LEVEL_DATA = {
+            1: {
+                badge: "LEVEL 1",
+                title: "LÀM QUEN VỚI CÂU NÓI TIẾNG ANH CƠ BẢN",
+                subtitle: "Phù hợp với học sinh đang bắt đầu luyện nói hoặc chưa thể tự đọc một bài tiếng Anh dài.",
+                features: [
+                    "Bài nói ngắn, nội dung gần gũi với cuộc sống hằng ngày.",
+                    "Câu tiếng Anh có độ dài ngắn và cấu trúc đơn giản.",
+                    "Có phần tiếng Việt đi kèm từng câu để học sinh dễ hiểu nội dung.",
+                    "Sử dụng nhiều mẫu câu quen thuộc như \"I like...\", \"I have...\", \"I can...\" và \"My favourite...\"."
+                ],
+                benefits: [
+                    "Hiểu nghĩa của từng câu trước khi luyện nói.",
+                    "Làm quen với cách đọc một câu tiếng Anh hoàn chỉnh.",
+                    "Ghi nhớ những từ vựng và mẫu câu nền tảng.",
+                    "Luyện phát âm và nói theo từng câu ngắn.",
+                    "Giảm cảm giác sợ hoặc ngại khi bắt đầu nói tiếng Anh.",
+                    "Tạo nền tảng để chuyển từ nói từng từ sang nói thành câu."
+                ]
+            },
+            2: {
+                badge: "LEVEL 2",
+                title: "MỞ RỘNG TỪ VỰNG VÀ LUYỆN NÓI THÀNH BÀI",
+                subtitle: "Phù hợp với học sinh đã nói được câu đơn giản nhưng vẫn cần bài mẫu đầy đủ để luyện tập.",
+                features: [
+                    "Bài nói được viết sẵn với nội dung đầy đủ.",
+                    "Có tiếng Việt đi kèm để học sinh hiểu chính xác nội dung.",
+                    "Câu nói dài và đa dạng hơn Level 1.",
+                    "Chủ đề bao gồm hoạt động hằng ngày, trải nghiệm, ước mơ và những tình huống tưởng tượng gần gũi.",
+                    "Các câu được sắp xếp theo một trình tự rõ ràng từ mở đầu đến kết thúc."
+                ],
+                benefits: [
+                    "Mở rộng từ vựng và cách diễn đạt theo từng chủ đề.",
+                    "Làm quen với những câu tiếng Anh có độ dài lớn hơn.",
+                    "Luyện đọc liên tục nhiều câu để tạo thành một bài nói hoàn chỉnh.",
+                    "Cải thiện khả năng nối câu và duy trì mạch nói.",
+                    "Luyện phát âm, ngắt nghỉ và nhấn giọng theo từng đoạn.",
+                    "Ghi nhớ cách một bài nói tiếng Anh được sắp xếp theo trình tự."
+                ]
+            },
+            3: {
+                badge: "LEVEL 3",
+                title: "LUYỆN ĐỘ TRÔI CHẢY VỚI NỘI DUNG DÀI VÀ ĐA DẠNG HƠN",
+                subtitle: "Phù hợp với học sinh đã có thể đọc và luyện một bài nói hoàn chỉnh nhưng cần tăng độ dài, vốn từ và sự trôi chảy.",
+                features: [
+                    "Bài nói được chuẩn bị sẵn với nội dung dài và nhiều thông tin hơn.",
+                    "Chủ đề mở rộng sang trường học, văn hóa, Internet, truyền thông, thói quen và mục tiêu tương lai.",
+                    "Câu nói có nhiều từ nối và cách diễn đạt nguyên nhân, kết quả hoặc trải nghiệm.",
+                    "Có phần tiếng Việt hỗ trợ để học sinh hiểu nội dung trước khi luyện tập.",
+                    "Bài nói yêu cầu học sinh duy trì việc đọc và nói trong thời gian dài hơn."
+                ],
+                benefits: [
+                    "Tăng vốn từ vựng theo những chủ đề rộng hơn trong cuộc sống.",
+                    "Làm quen với câu dài và cấu trúc diễn đạt đa dạng hơn.",
+                    "Nhận biết cách các câu được liên kết trong một bài nói.",
+                    "Luyện đọc thành tiếng một đoạn dài mà không bị ngắt quãng quá nhiều.",
+                    "Cải thiện độ trôi chảy, khả năng ngắt nghỉ và nhấn trọng âm.",
+                    "Tăng khả năng ghi nhớ và trình bày một bài nói có nhiều nội dung."
+                ]
+            },
+            4: {
+                badge: "LEVEL 4",
+                title: "LUYỆN TRÌNH BÀY BÀI NÓI TIẾNG ANH CHUYÊN SÂU HƠN",
+                subtitle: "Phù hợp với học sinh đã có thể đọc hiểu và luyện nói theo những bài tiếng Anh dài mà không cần bản dịch từng câu.",
+                features: [
+                    "Bài nói dài và được trình bày hoàn toàn bằng tiếng Anh.",
+                    "Nội dung đề cập đến những chủ đề rộng hơn như giáo dục, công nghệ, quảng cáo, môi trường, làm việc nhóm và các vấn đề xã hội.",
+                    "Câu văn dài hơn, có nhiều từ vựng theo chủ đề và cách diễn đạt nâng cao.",
+                    "Bài nói thường có câu mở đầu, quan điểm, lý do, ví dụ và phần kết thúc rõ ràng.",
+                    "Thời lượng luyện đọc và trình bày dài hơn các Level trước."
+                ],
+                benefits: [
+                    "Làm quen với việc tiếp nhận nội dung hoàn toàn bằng tiếng Anh.",
+                    "Mở rộng từ vựng, cụm từ và cách diễn đạt theo các chủ đề chuyên sâu hơn.",
+                    "Nhận biết cấu trúc của một bài trình bày tiếng Anh hoàn chỉnh.",
+                    "Luyện phát âm và ngữ điệu với những câu dài.",
+                    "Tăng khả năng duy trì giọng nói, nhịp điệu và sự tập trung trong một bài nói dài.",
+                    "Cải thiện độ trôi chảy và phong thái khi trình bày nội dung đã được chuẩn bị sẵn."
+                ]
+            }
+        };
+
+        const data = LEVEL_DATA[level];
+
+        const heroSection = document.querySelector('section');
+        if (heroSection) {
+            const bannerHtml = `
+                <div id="quiz-result-banner" class="max-w-5xl mx-auto px-4 pt-6 pb-2 relative z-30">
+                    <div class="bg-gradient-to-br from-[#003870] via-[#0055A6] to-[#0F2625] text-white p-6 sm:p-8 rounded-3xl shadow-2xl border-2 border-[#CEFF8A] relative overflow-hidden">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-white/20 pb-4 mb-4">
+                            <div>
+                                <span class="bg-[#CEFF8A] text-[#173433] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow">
+                                    🎯 KẾT QUẢ KHẢO SÁT ${name ? 'DÀNH CHO: ' + decodeURIComponent(name).toUpperCase() : ''}
+                                </span>
+                                <h2 class="text-xl sm:text-2xl font-black text-white mt-2.5 leading-tight">
+                                    ${data.badge}: ${data.title}
+                                </h2>
+                            </div>
+                            <span class="bg-emerald-500 text-white text-xs font-extrabold px-3 py-1.5 rounded-lg whitespace-nowrap shadow">
+                                ⚡ Đã cá nhân hóa tài liệu
+                            </span>
+                        </div>
+
+                        <p class="text-xs sm:text-sm text-blue-100 mb-6 font-semibold italic">
+                            "${data.subtitle}"
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 shadow-inner">
+                                <h3 class="font-black text-[#CEFF8A] mb-2 text-sm uppercase tracking-wide">01 Đặc điểm tài liệu thiết kế riêng</h3>
+                                <ul class="space-y-2 text-white font-medium">
+                                    ${data.features.map(f => `<li class="flex items-start gap-2"><span class="text-[#CEFF8A] font-black">✓</span><span>${f}</span></li>`).join('')}
+                                </ul>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 shadow-inner">
+                                <h3 class="font-black text-[#CEFF8A] mb-2 text-sm uppercase tracking-wide">02 Tác dụng đạt được cho con</h3>
+                                <ul class="space-y-2 text-white font-medium">
+                                    ${data.benefits.map(b => `<li class="flex items-start gap-2"><span class="text-[#CEFF8A] font-black">✓</span><span>${b}</span></li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-white/20 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+                            <span class="text-xs text-blue-100 font-bold">👇 Dưới đây là 3 Gói Học Phù Hợp Chuẩn Đầu Ra ${data.badge} Cho Con:</span>
+                            <a href="#pricing" class="bg-[#CEFF8A] hover:bg-white text-[#173433] font-black px-5 py-2.5 rounded-full shadow-lg transition-all text-xs uppercase tracking-wide">
+                                Xem 3 Gói Học Phù Hợp →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            heroSection.insertAdjacentHTML('beforebegin', bannerHtml);
+        }
+
+        // Tự động gắn nhãn Level vào Bảng giá
+        setTimeout(() => {
+            document.querySelectorAll('#pricing .bg-slate-900, #pricing .bg-white, #pricing .border-2').forEach(card => {
+                const titleEl = card.querySelector('h3, .text-xl, .text-2xl');
+                if (titleEl && !titleEl.innerText.includes(`LEVEL`)) {
+                    titleEl.innerText += ` [LEVEL ${level}]`;
+                }
+            });
+        }, 500);
+
+    })();
+    </script>
 </body>
 </html>
