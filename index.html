@@ -620,46 +620,60 @@
         </div>
     </footer>
 
-    <!-- ORDER MODAL -->
-    <div id="orderModal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-md w-full p-6 relative shadow-2xl">
+    <!-- ORDER MODAL: MÃ QR THANH TOÁN VIETQR & NHÓM ZALO -->
+    <div id="orderModal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 relative shadow-2xl my-8">
             <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-2xl font-bold">&times;</button>
             
-            <div class="text-center mb-6">
-                <span class="bg-[#CEFF8A] text-[#173433] font-bold text-xs px-3 py-1 rounded-full uppercase">Learning - Tutoring - Nurturing - Đăng Ký Cho Con</span>
-                <h3 id="modalPackageTitle" class="text-xl font-extrabold text-slate-900 mt-2">Gói L3 - GIÁO VIÊN LTN ĐỒNG HÀNH (499K)</h3>
-                <p class="text-xs text-slate-500 mt-1">Vui lòng điền thông tin để kích hoạt tài liệu & nhóm đồng hành cho con qua Zalo: 033 478 2611</p>
+            <div class="text-center mb-4">
+                <span class="bg-[#CEFF8A] text-[#173433] font-bold text-[11px] px-3 py-1 rounded-full uppercase">Learning - Tutoring - Nurturing</span>
+                <h3 id="modalPackageTitle" class="text-lg sm:text-xl font-extrabold text-slate-900 mt-2">Thanh Toán Đăng Ký Cho Con</h3>
+                <p id="modalCustomerInfo" class="text-xs text-[#0055A6] font-bold mt-1 bg-blue-50 py-1 px-3 rounded-full inline-block"></p>
             </div>
 
-            <form onsubmit="handleFormSubmit(event)" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">Họ và Tên Ba/Mẹ *</label>
-                    <input type="text" required placeholder="Ví dụ: Nguyễn Văn A" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-[#0055A6] focus:outline-none">
+            <!-- VIETQR IMAGE CONTAINER -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-center mb-4">
+                <span class="text-xs font-black text-slate-700 uppercase tracking-wide block mb-2">QUÉT MÃ QR THANH TOÁN TỰ ĐỘNG</span>
+                <div class="flex justify-center mb-3">
+                    <img id="vietqrImage" src="" alt="Mã QR Thanh Toán VietQR" class="w-48 h-48 sm:w-56 sm:h-56 object-contain rounded-xl border border-slate-200 shadow-md">
                 </div>
 
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">Họ tên & Độ tuổi của Con *</label>
-                    <input type="text" required placeholder="Ví dụ: Bé Minh (10 tuổi)" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-[#0055A6] focus:outline-none">
+                <!-- BANK DETAILS TABLE -->
+                <div class="text-left text-xs space-y-1.5 bg-white p-3 rounded-xl border border-slate-200">
+                    <div class="flex justify-between"><span class="text-slate-500">Ngân hàng:</span><strong class="text-slate-900 font-bold" id="bankName">MB Bank (Ngân hàng Quân Đội)</strong></div>
+                    <div class="flex justify-between"><span class="text-slate-500">Số tài khoản:</span><strong class="text-slate-900 font-bold" id="bankAcc">0334782611</strong></div>
+                    <div class="flex justify-between"><span class="text-slate-500">Chủ tài khoản:</span><strong class="text-slate-900 font-bold" id="bankOwner">HUYNH THI THU</strong></div>
+                    <div class="flex justify-between items-center pt-1 border-t border-slate-100">
+                        <span class="text-slate-500">Số tiền:</span>
+                        <strong id="modalAmountDisplay" class="text-[#0055A6] font-black text-sm">299.000đ</strong>
+                    </div>
                 </div>
 
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">Số Điện Thoại / Zalo *</label>
-                    <input type="tel" required placeholder="Ví dụ: 0912345678" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-[#0055A6] focus:outline-none">
+                <!-- TRANSFER CONTENT BOX WITH COPY BUTTON -->
+                <div class="mt-3 bg-blue-50 border border-blue-200 p-3 rounded-xl text-left">
+                    <span class="text-[11px] font-bold text-slate-600 block mb-1">Nội dung chuyển khoản (bắt buộc):</span>
+                    <div class="flex items-center justify-between gap-2">
+                        <code id="transferContentCode" class="font-mono font-extrabold text-sm text-[#0055A6] bg-white px-2.5 py-1 rounded border border-blue-200 flex-grow">G2 L3 0988123456</code>
+                        <button onclick="copyTransferContent()" class="bg-[#0055A6] text-white text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-slate-900 transition-colors whitespace-nowrap">
+                            📋 Sao chép
+                        </button>
+                    </div>
                 </div>
+            </div>
 
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">Địa chỉ Email nhận tài liệu *</label>
-                    <input type="email" required placeholder="name@gmail.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-[#0055A6] focus:outline-none">
-                </div>
+            <!-- ZALO GROUP LINK CONTAINER -->
+            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-2xl text-center mb-4">
+                <span class="text-xs font-extrabold text-emerald-800 block mb-1">💬 NHÓM ZALO HỖ TRỢ TRỰC TIẾP</span>
+                <p class="text-[11px] text-emerald-700 mb-3">Sau khi chuyển khoản, bấm nút bên dưới để vào nhóm Zalo kích hoạt tài liệu & nhận Giáo viên đồng hành 1:1.</p>
+                <a href="https://zalo.me/g/pajxunxu4bsamvzmowso" target="_blank" class="w-full bg-[#0068FF] hover:bg-[#0052cc] text-white font-black py-3 px-4 rounded-xl shadow-md flex items-center justify-center gap-2 text-xs sm:text-sm transition-all">
+                    <span class="w-5 h-5 rounded-full bg-white text-[#0068FF] font-black flex items-center justify-center text-[10px]">Z</span>
+                    <span>VÀO NHÓM ZALO ĐỒNG HÀNH NGAY →</span>
+                </a>
+            </div>
 
-                <div class="bg-[#F4FCDA] p-3 rounded-xl text-xs text-[#173433] font-semibold border border-[#c7e87d]">
-                    🔒 Thông tin được bảo mật bởi Learning - Tutoring - Nurturing.
-                </div>
-
-                <button type="submit" class="w-full bg-[#0055A6] hover:bg-[#173433] text-[#CEFF8A] font-black py-4 rounded-xl shadow-lg transition-all text-base">
-                    ✅ XÁC NHẬN ĐĂNG KÝ CHO CON
-                </button>
-            </form>
+            <button onclick="closeModal()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-extrabold py-3 rounded-xl shadow-md transition-all text-xs">
+                ✅ TÔI ĐÃ CHUYỂN KHOẢN VÀ VÀO NHÓM ZALO
+            </button>
         </div>
     </div>
 
@@ -678,7 +692,31 @@
         }
 
         function openModal(packageName) {
-            document.getElementById('modalPackageTitle').textContent = 'Đăng Ký: ' + packageName;
+            const urlParams = new URLSearchParams(window.location.search);
+            const level = urlParams.get('level') || '3';
+            const name = urlParams.get('name') || '';
+            const phone = urlParams.get('phone') || '';
+
+            let amount = 299000;
+            let goiCode = 'G2';
+            if (packageName.includes('99') || packageName.includes('Gói 1')) {
+                amount = 99000;
+                goiCode = 'G1';
+            } else if (packageName.includes('499') || packageName.includes('Gói 3')) {
+                amount = 499000;
+                goiCode = 'G3';
+            }
+
+            const transferCode = `${goiCode} L${level} ${phone ? phone : 'LTN'}`.trim();
+
+            document.getElementById('modalPackageTitle').innerText = `${packageName} [LEVEL ${level}]`;
+            document.getElementById('modalCustomerInfo').innerText = name ? `Dành cho: ${decodeURIComponent(name)} (${phone})` : `Level: ${level}`;
+            document.getElementById('modalAmountDisplay').innerText = `${amount.toLocaleString('vi-VN')}đ`;
+            document.getElementById('transferContentCode').innerText = transferCode;
+
+            const qrUrl = `https://img.vietqr.io/image/MB-0334782611-compact2.png?amount=${amount}&addInfo=${encodeURIComponent(transferCode)}&accountName=HUYNH%20THI%20THU`;
+            document.getElementById('vietqrImage').src = qrUrl;
+
             document.getElementById('orderModal').classList.remove('hidden');
         }
 
@@ -686,10 +724,13 @@
             document.getElementById('orderModal').classList.add('hidden');
         }
 
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            alert('🎉 Cảm ơn Ba/Mẹ đã đăng ký cho con với Learning - Tutoring - Nurturing! Giáo viên LTN sẽ liên hệ qua Zalo/SĐT 033 478 2611 để kích hoạt bộ tài liệu & nhóm đồng hành.');
-            closeModal();
+        function copyTransferContent() {
+            const text = document.getElementById('transferContentCode').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('📋 Đã sao chép nội dung chuyển khoản: ' + text);
+            }).catch(() => {
+                alert('Nội dung chuyển khoản: ' + text);
+            });
         }
     </script>
 
